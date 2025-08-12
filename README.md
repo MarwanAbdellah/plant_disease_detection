@@ -23,8 +23,8 @@ This project uses **ResNet18**, a convolutional neural network pretrained on Ima
 import torch.onnx
 
 # Dummy input
-x = torch.randn(1, 3, 224, 224)
-torch.onnx.export(model, x, "model.onnx", input_names=['input'], output_names=['output'])
+x = torch.randn(1, 3, 256, 256)
+torch.onnx.export(model, x, "model.onnx", input_names=['input'], output_names=['output'], ...)
 ```
 
 ---
